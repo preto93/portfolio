@@ -1,8 +1,10 @@
 .title{
     text-align: center;
     font-size: 50px;
-    color: rgb(255, 0, 0);
+    color: white;
     margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .divider{

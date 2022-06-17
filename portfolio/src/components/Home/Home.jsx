@@ -10,7 +10,7 @@ import Back from '../../assets/back.jpg';
 const Home = () => {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, backgroundColor: 'black' }} >
         <Grid container spacing={2}>
           <Grid item md={6}>
             <Grid item md={12}>
@@ -20,7 +20,7 @@ const Home = () => {
             </Grid>
             <Grid item xs={12}>
               <div className="divider">
-                <label className="subtitle">Hello, I’m Benjamin Thomson. I Have 8 years of experience in Web and UX design.
+                <label className="subtitle" style={{color: 'white'}}>Hello, I’m Benjamin Thomson. I Have 8 years of experience in Web and UX design.
                  I am worked on a variety of brands and with agencies both big and small.
                 </label>
               </div>
