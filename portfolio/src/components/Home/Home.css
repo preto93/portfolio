@@ -4,3 +4,8 @@
     color: rgb(255, 0, 0);
     margin-top: 50px;
 }
+
+.divider{
+    display: flex;
+    justify-content: center;
+}
