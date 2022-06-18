@@ -7,7 +7,7 @@ const About = () => {
     <>
       <h1>About ME</h1>
 
-      <Grid container xs={12}>
+      <Grid container item xs={12}>
         <Grid item md={3}>
           <p>IMAGEN MIA</p>
         </Grid>
@@ -35,7 +35,7 @@ const About = () => {
           <p>English, Spanish, French</p>
 
           <h2>What IM Doing</h2>
-          <Grid container md={12}>
+          <Grid container item md={12}>
             <Grid item md={4}>
           <Box
             sx={{

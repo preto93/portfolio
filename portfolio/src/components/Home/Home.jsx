@@ -1,17 +1,15 @@
 import React from "react";
 import "./Home.css";
-import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import Back from '../../assets/back.jpg';
+import Background from '../../assets/background.png';
 
 const Home = () => {
   return (
     <>
-      <Box sx={{ flexGrow: 1, backgroundColor: 'black' }} >
-        <Grid container spacing={2}>
+      <Box sx={{ flexGrow: 1, }} className="backgroundHome">
+        <Grid container item spacing={2}>
           <Grid item md={6}>
             <Grid item md={12}>
               <div className="divider">
@@ -34,9 +32,8 @@ const Home = () => {
           </Grid>
           <Grid item md={6}>
             <Grid item md={12}>
-              <div className="divider">
-                <img src={Back} alt='back' />
-
+              <div className="divider" style={{ height: '0vh'}}>
+                
               </div>
             </Grid>
           </Grid>
