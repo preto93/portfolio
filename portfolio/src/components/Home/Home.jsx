@@ -3,7 +3,6 @@ import "./Home.css";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import Background from '../../assets/background.png';
 
 const Home = () => {
   return (
@@ -32,7 +31,7 @@ const Home = () => {
           </Grid>
           <Grid item md={6}>
             <Grid item md={12}>
-              <div className="divider" style={{ height: '0vh'}}>
+              <div className="divider" style={{ height: '90vh'}}>
                 
               </div>
             </Grid>
