@@ -1,0 +1,15 @@
+.grid-contacto{
+    display: flex;
+    flex-direction: column !important;
+}
+
+.label-contacto{
+    color: white;
+}
+
+.grid-izq{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

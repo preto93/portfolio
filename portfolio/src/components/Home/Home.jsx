@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Box sx={{ flexGrow: 1, }} className="backgroundHome">
         <Grid container item spacing={2}>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Grid item md={12}>
               <div className="divider">
                 <label className="title">Software Developer</label>
@@ -29,7 +29,7 @@ const Home = () => {
               </div>
             </Grid>
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Grid item md={12}>
               <div className="divider" style={{ height: '90vh'}}>
                 
