@@ -1,15 +1,21 @@
 import React from "react";
 import "./About.css";
-import { Grid, Divider, Box } from "@mui/material";
+import { Grid, Divider, Box, Container, Button } from "@mui/material";
 
 const About = () => {
   return (
     <>
-      <h1>About ME</h1>
-
+    
+    <Container sx={{paddingTop: '2rem'}}>
       <Grid container item xs={12}>
         <Grid item md={3}>
-          <p>IMAGEN MIA</p>
+          <label style={{backgroundColor: '#f2f2f2', padding: '10px 12px'}}> About Me</label>
+          <h1>Creative developer based in Buenos Aires</h1>
+          <p style={{color: '#f2f2f2'}}>I'm Creative Independent Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer,
+             I have acquired the skills and knowledge necessary to make your project a success.
+              I enjoy every step of the design process, from discussion and collaboration.
+          </p>
+          <Button variant='contained'>Download CV</Button>
         </Grid>
         <Grid item md={9}>
           <h2>Sebastian Medina</h2>
@@ -79,6 +85,7 @@ const About = () => {
             </Grid>
         </Grid>
       </Grid>
+      </Container>
     </>
   );
 };
