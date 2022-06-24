@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar'
 import About from './components/About/About'  
 import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact'
+import Porftolio from './components/Portfolio/Porftolio';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <NavBar />
     <Home />
     <About />
+    <Porftolio />
     <Experience />
     <Contact />
     </>
