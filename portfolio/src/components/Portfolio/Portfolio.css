@@ -1,0 +1,44 @@
+.portfolio-gray{
+    background-color: #f2f2f2;
+    padding: 10px 12px;
+    margin-bottom: 10px !important;
+}
+.portfolio-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio-title{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.portfolio-button{
+    background-color: #ffffff;
+    padding: 10px 12px;
+    margin: 3px;
+    border-color: transparent;
+    font-weight: bold;
+    transition: background-color 1s;
+}
+
+.portfolio-button-selected{
+    background-color: black !important;
+    padding: 10px 12px;
+    color: white;
+    margin: 3px;
+    font-weight: bold;
+    transition: background-color 1s;
+    border-color: transparent;
+}
+
+.portfolio-div{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.div-boxes{
+    min-height: 40vh;
+}

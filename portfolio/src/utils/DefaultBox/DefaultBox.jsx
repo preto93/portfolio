@@ -22,13 +22,17 @@ const DefaultBox = ({ card }) => {
           })}
         >
           <div className="card front">
-            <div className="card-body d-flex justify-content-center align-items-center">
-              <p className="card-text fs-1 fw-bold">{card.front}</p>
+            <div className="card-body">
+              <p className="card-text">{card.front}</p>
+            </div>
+            <div className="card-footer">
+              <p className="card-text">VER MAS</p>
             </div>
           </div>
           <div className="card back">
-            <div className="card-body d-flex justify-content-center align-items-center">
-              <p className="card-text fs-1 fw-bold">{card.back}</p>
+            <div className="card-body">
+              <p className="card-text">{card.back}</p>
+              <p className="card-text">{card.stack}</p>
             </div>
           </div>
         </div>
