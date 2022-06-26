@@ -29,7 +29,7 @@ const About = () => {
               knowledge necessary to make your project a success. I enjoy every
               step of the design process, from discussion and collaboration.
             </p>
-            <Button variant="contained">Download CV</Button>
+        
           </Grid>
           <Grid item md={9}>
             {/* <h2>Sebastian Medina</h2>
