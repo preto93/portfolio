@@ -9,11 +9,11 @@ import AndroidIcon from '@mui/icons-material/Android';
 import MovieIcon from '@mui/icons-material/Movie';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-
+import StyleIcon from '@mui/icons-material/Style';
 
 const About = () => {
   return (
-    <><div style={{ backgroundColor: "#1F2226", marginTop: '1rem', marginBottom: '1rem', paddingTop: '1rem', paddingBottom: '1rem'}}>
+    <><div style={{ backgroundColor: "#1F2226", paddingTop: '1rem', paddingBottom: '1rem'}}>
       <Container sx={{ paddingTop: "2rem"}}>
         <Grid container item xs={12}>
           <Grid item md={3}>
@@ -31,7 +31,7 @@ const About = () => {
             </p>
         
           </Grid>
-          <Grid item md={9}>
+          
             {/* <h2>Sebastian Medina</h2>
             <h3>Software developer</h3>
             <p>
@@ -54,29 +54,183 @@ const About = () => {
             <h4>Languages:</h4>
             <p>English, Spanish, French</p>
  */}
-             <h2 style={{ color: "white"}}>My interests</h2>
-            <Grid container item md={12}>
-              <Grid item md={4}>
+ 
+            <Grid item md={9}>
+            <h2 style={{ color: "white", textAlign: "center", marginBottom: "4rem"}}>My interests</h2>
+            <Container>
+            <Grid container item md={12} className="interests">
+              <Grid item md={3} className='grid-interests'>
                 <Box
+                
                   sx={{
                     width: 100,
                     height: 100,
-                    backgroundColor: "primary.dark",
+                    borderRadius: '10px',
+                    backgroundColor: "#252A2E",
+                    transition: 'background-color 1s',
                     "&:hover": {
-                      backgroundColor: "primary.main",
-                      opacity: [0.9, 0.8, 0.7],
+                      backgroundColor: "#1CB698",
+                      
                     },
                   }}
                 >
                   <div className="interest-container">
-                    <VideogameAssetIcon />
-                    <p>Games</p>
+                    <VideogameAssetIcon sx={{color: 'white'}} />
+                    <p  style={{ color: "white", fontWeight: 'bold'}}>Games</p>
                   </div>
-                  
+                </Box>
+              </Grid>
+              <Grid item md={3} className='grid-interests'>
+                <Box
+                
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    borderRadius: '10px',
+                    backgroundColor: "#252A2E",
+                    transition: 'background-color 1s',
+                    "&:hover": {
+                      backgroundColor: "#1CB698",
+                      
+                    },
+                  }}
+                >
+                  <div className="interest-container">
+                    <MusicNoteIcon sx={{color: 'white'}} />
+                    <p  style={{ color: "white", fontWeight: 'bold'}}>Music</p>
+                  </div>
+                </Box>
+              </Grid>
+              <Grid item md={3} className='grid-interests'>
+                <Box
+                
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    borderRadius: '10px',
+                    backgroundColor: "#252A2E",
+                    transition: 'background-color 1s',
+                    "&:hover": {
+                      backgroundColor: "#1CB698",
+                      
+                    },
+                  }}
+                >
+                  <div className="interest-container">
+                    <FlightTakeoffIcon sx={{color: 'white'}} />
+                    <p  style={{ color: "white", fontWeight: 'bold'}}>Travel</p>
+                  </div>
+                </Box>
+              </Grid>
+              <Grid item md={3} className='grid-interests'>
+                <Box
+                
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    borderRadius: '10px',
+                    backgroundColor: "#252A2E",
+                    transition: 'background-color 1s',
+                    "&:hover": {
+                      backgroundColor: "#1CB698",
+                      
+                    },
+                  }}
+                >
+                  <div className="interest-container">
+                    <AndroidIcon sx={{color: 'white'}} />
+                    <p  style={{ color: "white", fontWeight: 'bold'}}>Android</p>
+                  </div>
+                </Box>
+              </Grid>
+              <Grid item md={3} className='grid-interests'>
+                <Box
+                
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    borderRadius: '10px',
+                    backgroundColor: "#252A2E",
+                    transition: 'background-color 1s',
+                    "&:hover": {
+                      backgroundColor: "#1CB698",
+                      
+                    },
+                  }}
+                >
+                  <div className="interest-container">
+                    <MovieIcon sx={{color: 'white'}} />
+                    <p  style={{ color: "white", fontWeight: 'bold'}}>Movies</p>
+                  </div>
+                </Box>
+              </Grid>
+              <Grid item md={3} className='grid-interests'>
+                <Box
+                
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    borderRadius: '10px',
+                    backgroundColor: "#252A2E",
+                    transition: 'background-color 1s',
+                    "&:hover": {
+                      backgroundColor: "#1CB698",
+                      
+                    },
+                  }}
+                >
+                  <div className="interest-container">
+                    <FastfoodIcon sx={{color: 'white'}} />
+                    <p  style={{ color: "white", fontWeight: 'bold'}}>Food</p>
+                  </div>
+                </Box>
+              </Grid>
+              <Grid item md={3} className='grid-interests'>
+                <Box
+                
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    borderRadius: '10px',
+                    backgroundColor: "#252A2E",
+                    transition: 'background-color 1s',
+                    "&:hover": {
+                      backgroundColor: "#1CB698",
+                      
+                    },
+                  }}
+                >
+                  <div className="interest-container">
+                    <FitnessCenterIcon sx={{color: 'white'}} />
+                    <p  style={{ color: "white", fontWeight: 'bold'}}>Excercise</p>
+                  </div>
+                </Box>
+              </Grid>
+              <Grid item md={3} className='grid-interests'>
+                <Box
+                
+                  sx={{
+                    width: 100,
+                    height: 100,
+                    borderRadius: '10px',
+                    backgroundColor: "#252A2E",
+                    transition: 'background-color 1s',
+                    "&:hover": {
+                      backgroundColor: "#1CB698",
+                      
+                    },
+                  }}
+                >
+                  <div className="interest-container">
+                    <StyleIcon sx={{color: 'white'}} />
+                    <p  style={{ color: "white", fontWeight: 'bold'}}>Nature</p>
+                  </div>
                 </Box>
               </Grid>
               
+              
             </Grid>
+            </Container>
           </Grid>
         </Grid>
       </Container>
