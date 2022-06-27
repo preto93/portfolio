@@ -1,3 +1,11 @@
+.background-contact{
+    background-image: url(https://goprotemplate.com/work/01_product/assets/images/contact_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+    min-height: 70vh;
+}
+
 .grid-contacto{
     display: flex;
     flex-direction: column !important;
@@ -10,6 +18,6 @@
 .grid-izq{
     height: 40vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: space-evenly;
 }

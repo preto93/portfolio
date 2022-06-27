@@ -5,7 +5,7 @@ import { Grid, Container, Button } from "@mui/material";
 const Contact = () => {
   return (
     
-    <div style={{backgroundColor: 'black', minHeight: '70vh'}}>
+    <div  className="background-contact">
       <Container>
         <Grid>
           <h1 className="text-center" style={{textAlign: 'center', color: 'white', fontSize: '40px'}}>Contacto</h1>

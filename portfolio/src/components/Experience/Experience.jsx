@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Grid, Button, Container } from '@mui/material'
 import './Experience.css'
 import IconoProvisorio from '../../assets/iconoProvisorio.png'
+import TimelineVertical from '../../utils/TimelineVertical/TimelineVertical'
 
 const Experience = () => {
   return (
@@ -22,7 +23,7 @@ const Experience = () => {
            
           </Grid>
           <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <Grid item md={12} sx={{display: 'flex', flexDirection:'row', alignItems: 'center'}}>
+            {/* <Grid item md={12} sx={{display: 'flex', flexDirection:'row', alignItems: 'center'}}>
                 <img src={IconoProvisorio} alt='' width='40px' height='40px'/>
                 <Grid>
                     <h2  style={{color: 'white'}}>Transferencias seguras</h2>
@@ -50,7 +51,8 @@ const Experience = () => {
                     <h2  style={{color: 'white'}}>Transferencias seguras</h2>
                     <p  style={{color: 'white'}}>Utilizamos servidores con servicios de seguridad de alto nivel. </p>
                 </Grid>
-            </Grid>
+            </Grid> */}
+            <TimelineVertical />
           </Grid>
         </Grid>
         </Container>

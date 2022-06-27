@@ -57,13 +57,7 @@ const Porftolio = () => {
       back: "MORE INFO",
       stack: "web3",
     },
-    {
-      id: "7",
-      variant: "click",
-      front: "WEB3 OTHER",
-      back: "MORE INFO",
-      stack: "web3",
-    },
+    
   ];
 
   useEffect(() => {

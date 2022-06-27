@@ -1,7 +1,7 @@
 .backgroundHome{
     background: url(../../assets/background.png) no-repeat fixed center ;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
 }

@@ -10,7 +10,7 @@
 
 .grid-interests{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     padding-bottom: 2rem;
 
 }
