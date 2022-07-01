@@ -9,16 +9,19 @@ import {
   Fade,
 } from "@mui/material";
 import DefaultBox from "../../utils/DefaultBox/DefaultBox";
+import ReactLogo from "../../assets/react.png";
 
 const Porftolio = () => {
   const [selected, setSelected] = useState("all");
   const [checked, setChecked] = React.useState(false);
 
+  
+
   const cards = [
     {
       id: "1",
       variant: "click",
-      front: "REACT PROJECT",
+      front: ReactLogo,
       back: "INFO ABOUT REACT PROJECT",
       stack: "react",
     },

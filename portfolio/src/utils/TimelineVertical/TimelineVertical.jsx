@@ -10,47 +10,46 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 const TimelineVertical = () => {
   return (
     <>
-      <Timeline position="alternate">
+      <Timeline position="alternate" sx={{width: '100%'}}>
         <TimelineItem>
           <TimelineOppositeContent color="white">
-            09:30 am
+            11/2021 - NOW
+          </TimelineOppositeContent>
+          <TimelineSeparator sx={{height: '20vh'}}>
+            <TimelineDot variant="outlined" color="secondary"/>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent color="white">
+            DappsFactory <br/> Software Factory 
+            <p>
+              Full Stack developer
+            </p>
+            <p>
+              React JS <br /> Solidity 
+            </p>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent color="white">
+            <p>Freelancer</p>
+            <p>MERN Stack</p>
+            <p>Mongo Express React Node</p>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot variant="outlined" color="secondary"/>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent color="white">Eat</TimelineContent>
+          <TimelineContent color="white">06/2018 - 11/2021</TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent color="white">
-            10:00 am
-          </TimelineOppositeContent>
-          <TimelineSeparator>
+         
+          <TimelineSeparator sx={{height: '1px'}}>
             <TimelineDot variant="outlined" color="secondary"/>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent color="white">Code</TimelineContent>
+          <TimelineContent color="white"></TimelineContent>
         </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent color="white">
-            12:00 am
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot variant="outlined" color="secondary"/>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent color="white">Sleep</TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent color="white">
-            9:00 am
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot variant="outlined" color="secondary"/>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent color="white">Repeat</TimelineContent>
-        </TimelineItem>
+        
       </Timeline>
     </>
   )
