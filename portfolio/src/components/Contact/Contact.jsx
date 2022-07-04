@@ -8,7 +8,7 @@ const Contact = () => {
     <div  className="background-contact">
       <Container>
         <Grid>
-          <h1 className="text-center" style={{textAlign: 'center', color: 'white', fontSize: '40px'}}>Contacto</h1>
+          <h1 className="text-center" style={{textAlign: 'center', color: 'white', fontSize: '40px', marginTop: '0px'}}>Contacto</h1>
           <h4 style={{textAlign: 'center', fontSize: '16px', color: '#a6a6a6'}}>
             Contactame completando el formulario o con alguna de las opciones
           </h4>

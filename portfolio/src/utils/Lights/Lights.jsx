@@ -24,8 +24,9 @@ function Scene() {
   const { nodes, materials } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/dragon/model.gltf')
   return (
     <>
-      <MovingSpot depthBuffer={depthBuffer} color="#666666" position={[3, 3, 2]} />
+      <MovingSpot depthBuffer={depthBuffer} color="#9C27B0" position={[3, 3, 1]} />
       <MovingSpot depthBuffer={depthBuffer} color="#b00c3f" position={[1, 3, 0]} />
+      <MovingSpot depthBuffer={depthBuffer} color="#9C27B0" position={[-2, 3, 0]} />
       <mesh position={[0, -1.03, 0]} castShadow receiveShadow geometry={nodes.dragon.geometry} material={materials['Default OBJ.001']} dispose={null} />
       <mesh receiveShadow position={[0, -1, 0]} rotation-x={-Math.PI / 2}>
         <planeGeometry args={[50, 50]} />

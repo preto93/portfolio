@@ -13,9 +13,9 @@ const Experience = () => {
       <Lights />
       
       <Box className="center-experience" color="white">
-          <Container>
+        <Container>
           <Grid container item >
-            <Grid item xs={12} md={6} sx={{height: '70vh', display: 'flex', alignItems: 'center'}}>
+            <Grid item xs={12} md={6} sx={{height: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               <Grid item md={12} sx={{padding: '3rem'}}>
                 <div className="div-left">
                   <label className="experience-title">Work Experience</label>

@@ -19,4 +19,7 @@
     position: absolute;
     pointer-events: none;
     bottom: 15%;
+    right: 0%;
+    left: 0%;
+    
   }
