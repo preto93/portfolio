@@ -11,3 +11,12 @@
     color :white;
 }
 
+.container-experience{
+    position: relative;
+}
+
+.center-experience {
+    position: absolute;
+    pointer-events: none;
+    bottom: 15%;
+  }
