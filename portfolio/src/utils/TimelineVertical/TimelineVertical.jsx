@@ -10,7 +10,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 const TimelineVertical = () => {
   return (
     <>
-      <Timeline position="alternate" sx={{width: '100%'}}>
+      <Timeline position="alternate" sx={{width: '100%', display: 'flex', justifyContent: 'center'}}>
         <TimelineItem>
           <TimelineOppositeContent color="white">
             11/2021 - NOW

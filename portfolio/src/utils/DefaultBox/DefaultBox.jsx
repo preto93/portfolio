@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Box } from "@mui/material";
+import { Box, Fab } from "@mui/material";
+import AddIcon from '@mui/icons-material/Add';
 import "./DefaultBox.scss";
 import cn from "classnames";
 import { FaReact } from "react-icons/fa";
@@ -24,11 +25,15 @@ const DefaultBox = ({ card }) => {
         >
           <div className="card front">
             <div className="card-body">
-              <p className="card-text"><FaReact style={{fontSize: '10rem', color: 'red'}} /> {/* <img src={card.front} alt='front' width='50%' style={{backgroundColor: 'black'}}/> */}</p>
+              <p className="card-text"><FaReact className="font-neon"/></p>
+              <div className="card-footer" >
+                <Fab color="primary" aria-label="add">
+                <AddIcon />
+              </Fab>
+
+              </div>
             </div>
-            <div className="card-footer">
-              <p className="card-text">VER MAS</p>
-            </div>
+           
           </div>
           <div className="card back">
             <div className="card-body">

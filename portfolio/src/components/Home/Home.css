@@ -24,3 +24,11 @@
     border: 1px solid white !important;
     color: red !important;
 }
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}

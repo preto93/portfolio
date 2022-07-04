@@ -11,6 +11,7 @@ import {
 import DefaultBox from "../../utils/DefaultBox/DefaultBox";
 import ReactLogo from "../../assets/react.png";
 
+
 const Porftolio = () => {
   const [selected, setSelected] = useState("all");
   const [checked, setChecked] = React.useState(false);
@@ -125,10 +126,6 @@ const Porftolio = () => {
             </div>
           </Grid>
 
-          {/* <FormControlLabel
-        control={<Switch checked={checked} onChange={handleChange} />}
-        label="Show"
-      /> */}
 
           <Grid style={{ display: "flex", flexDirection: "row" }} container>
             {cards.map((card, index) => (

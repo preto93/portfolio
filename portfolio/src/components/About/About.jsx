@@ -57,9 +57,9 @@ const About = () => {
  
             <Grid item md={9}>
             <h2 style={{ color: "white", textAlign: "center", marginBottom: "4rem"}}>My interests</h2>
-            <Container>
+            <Container sx={{width: '60%'}}>
             <Grid container item md={12} className="interests">
-              <Grid item md={3} className='grid-interests'>
+              <Grid item xs={6} sm={6} md={3} className='grid-interests'>
                 <Box
                 
                   sx={{
@@ -80,7 +80,7 @@ const About = () => {
                   </div>
                 </Box>
               </Grid>
-              <Grid item md={3} className='grid-interests'>
+              <Grid item xs={6} sm={6} md={3} className='grid-interests'>
                 <Box
                 
                   sx={{
@@ -101,7 +101,7 @@ const About = () => {
                   </div>
                 </Box>
               </Grid>
-              <Grid item md={3} className='grid-interests'>
+              <Grid item xs={6} sm={6} md={3} className='grid-interests'>
                 <Box
                 
                   sx={{
@@ -122,7 +122,7 @@ const About = () => {
                   </div>
                 </Box>
               </Grid>
-              <Grid item md={3} className='grid-interests'>
+              <Grid item xs={6} sm={6} md={3} className='grid-interests'>
                 <Box
                 
                   sx={{
@@ -143,7 +143,7 @@ const About = () => {
                   </div>
                 </Box>
               </Grid>
-              <Grid item md={3} className='grid-interests'>
+              <Grid item xs={6} sm={6} md={3} className='grid-interests'>
                 <Box
                 
                   sx={{
@@ -164,7 +164,7 @@ const About = () => {
                   </div>
                 </Box>
               </Grid>
-              <Grid item md={3} className='grid-interests'>
+              <Grid item xs={6} sm={6} md={3} className='grid-interests'>
                 <Box
                 
                   sx={{
@@ -185,7 +185,7 @@ const About = () => {
                   </div>
                 </Box>
               </Grid>
-              <Grid item md={3} className='grid-interests'>
+              <Grid item xs={6} sm={6} md={3} className='grid-interests'>
                 <Box
                 
                   sx={{
@@ -206,7 +206,7 @@ const About = () => {
                   </div>
                 </Box>
               </Grid>
-              <Grid item md={3} className='grid-interests'>
+              <Grid item xs={6} sm={6} md={3} className='grid-interests'>
                 <Box
                 
                   sx={{

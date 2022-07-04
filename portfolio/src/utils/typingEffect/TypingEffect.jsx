@@ -4,15 +4,13 @@ import ReactTypingEffect from 'react-typing-effect';
 const TypingEffect = () => {
   return (
     <>
-      <ReactTypingEffect
-        text={["SEBASTIAN MEDINA"]}
-      />
+      
 
       <br />
 
       <ReactTypingEffect
         text={["SOFTWARE  DEVELOPER"]}
-        cursorRenderer={cursor => <h1>{cursor}</h1>}
+        cursorRenderer={cursor => <h1 style={{display: 'none'}}>{cursor}</h1>}
         displayTextRenderer={(text, i) => {
           return (
             <h1>
