@@ -36,24 +36,24 @@
 
         &.front {
           transform: rotateY(0);
-          background-color: #2d2d2d;
+          background-color: #16213E;
           color: #fff;
           display: flex;
           align-items: center;
           justify-content: center;
-          transition: background-color 1s ;
-          
+     
+          transition: box-shadow 1s, background-color 1s ;
           
         }
 
         &.front:hover {
           transform: rotateY(0);
-          background-color: #09004e;
+          background-color: #0F3460;
           color: rgb(0, 0, 0);
           display: flex;
           align-items: center;
           justify-content: center;
-          
+          box-shadow: 0px 0px 2px 2px #E94560;
     
 
           .font-neon{
@@ -68,12 +68,18 @@
 
         &.back {
           transform: rotateY(180deg);
-          background-color: rgb(119, 119, 119);
-          color: #2d2d2d;
+          background-color: #16213E;
+          color: #ffffff;
           display: flex;
           align-items: center;
           justify-content: center;
+          transition: box-shadow 1s;
+
           
+        }
+
+        &.back:hover{
+          box-shadow: 0px 0px 5px 5px #E94560;
         }
       }
 
@@ -93,4 +99,14 @@
   position: absolute;
   right: 1rem;
   bottom: 1rem;
+}
+
+.card-text{
+  text-align: center;
+  color:white;
+}
+
+.card-icons{
+  display: flex;
+    justify-content: space-evenly;
 }

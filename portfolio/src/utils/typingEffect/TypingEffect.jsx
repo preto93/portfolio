@@ -19,7 +19,7 @@ const TypingEffect = () => {
                 return (
                   <span
                     key={key}
-                    style={{color: 'white', fontSize: '60px'}}
+                    style={{color: '#E94560', fontSize: '60px'}}
                   >{char}</span>
                 );
               })}

@@ -10,6 +10,10 @@ import {
 } from "@mui/material";
 import DefaultBox from "../../utils/DefaultBox/DefaultBox";
 import ReactLogo from "../../assets/react.png";
+import DappsFactory from '../../assets/dappsfactory.png';
+import MinterFactory from '../../assets/minterFactory.png';
+import PerceptionFace from '../../assets/perceptionface.png';
+import Zoom from "react-reveal/Zoom";
 
 
 const Porftolio = () => {
@@ -22,45 +26,30 @@ const Porftolio = () => {
     {
       id: "1",
       variant: "click",
-      front: ReactLogo,
-      back: "INFO ABOUT REACT PROJECT",
+
+      photo: DappsFactory,
+      back: "Landing page developed with React.",
       stack: "react",
+      linkGit: "https://dappsfactory.io",
+      linkWeb: 'https://dappsfactory.io'
     },
     {
       id: "2",
       variant: "click",
-      front: "WEB3 PROJECT",
-      back: "INFO ABOUT WEB3",
+      photo: MinterFactory,
+      back: "Create your own criptocurrency. Creation of Tokens ERC-20. Developed with React and EtherJs",
       stack: "web3",
+      linkWeb: "https://minterfactory.io"
     },
     {
       id: "3",
       variant: "click",
-      front: "WEB3 OTHER",
-      back: "MORE INFO",
+      photo: PerceptionFace,
+      back: "Administration panel developed with React and EtherJs. Smart Contracts made in Solidity.",
       stack: "web3",
+      linkWeb: "https://perceptionFace.com"
     },
-    {
-      id: "4",
-      variant: "click",
-      front: "WEB3 OTHER",
-      back: "MORE INFO",
-      stack: "web3",
-    },
-    {
-      id: "5",
-      variant: "click",
-      front: "WEB3 OTHER",
-      back: "MORE INFO",
-      stack: "web3",
-    },
-    {
-      id: "6",
-      variant: "click",
-      front: "WEB3 OTHER",
-      back: "MORE INFO",
-      stack: "web3",
-    },
+    
     
   ];
 
@@ -73,14 +62,15 @@ const Porftolio = () => {
 
   return (
     <>
-      <div style={{paddingTop: '2rem', paddingBottom: '2rem'}}>
+      <Zoom>
+      <div style={{paddingTop: '4rem', paddingBottom: '4rem', backgroundColor: '#1A1A2E',}}>
         <Container>
-          <Grid>
-            <label className="portfolio-gray">Portfolio</label>
+          <Grid sx={{marginBottom: '2rem'}}>
+            <label className="portfolio-box">Portfolio</label>
           </Grid>
           <Grid container className="portfolio-grid">
             <div>
-              <label className="portfolio-title">Dev Portfolio</label>
+              <label className="portfolio-title">Recent Works</label>
             </div>
             <div className="portfolio-div">
               <button
@@ -149,6 +139,7 @@ const Porftolio = () => {
           </Grid>
         </Container>
       </div>
+      </Zoom>
     </>
   );
 };

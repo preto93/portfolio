@@ -13,8 +13,8 @@ const ThreeCanva = () => {
       {/* <h1 className='title'>Sebastian Medina</h1> */}
     
       <Canvas  shadows gl={{ stencil: false, antialias: false }} camera={{ position: [0, 0, 20], fov: 50, near: 17, far: 40 }} >
-      <fog attach="fog" args={["#4a014a", 24, 31]} />
-      <color attach="background" args={["black"]} />
+      <fog attach="fog" args={["#E94560", 27, 33]} />
+      <color attach="background" args={["#1A1A2E"]} />
       <ambientLight intensity={1.5} />
       <directionalLight position={[-10, -10, -5]} intensity={0.5} />
       <directionalLight
@@ -35,7 +35,7 @@ const ThreeCanva = () => {
         </group>
       </Physics>
       <EffectComposer>
-        <SSAO radius={0.4} intensity={50} luminanceInfluence={0.4} color="#b507e0" />
+        <SSAO radius={0.4} intensity={50} luminanceInfluence={0.4} color="#0F3460" />
         <Bloom intensity={1.25} kernelSize={3} luminanceThreshold={0.5} luminanceSmoothing={0.0} />
       </EffectComposer>
     </Canvas>
