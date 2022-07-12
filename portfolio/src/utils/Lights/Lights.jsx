@@ -8,8 +8,8 @@ export default function Lights() {
   return (
     <div className="canvas-fiber">
     <Canvas2 shadows dpr={[1, 2]} camera={{ position: [-2, 2, 6], fov: 50, near: 1, far: 20 }}>
-      <color attach="background" args={['#202020']} />
-      <fog attach="fog" args={['#202020', 5, 20]} />
+      <color attach="background" args={['#1A1A2E']} />
+      <fog attach="fog" args={['#1A1A2E', 5, 20]} />
       <ambientLight intensity={0.015} />
       <Scene />
     </Canvas2>
@@ -24,9 +24,9 @@ function Scene() {
   const { nodes, materials } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/dragon/model.gltf')
   return (
     <>
-      <MovingSpot depthBuffer={depthBuffer} color="#9C27B0" position={[3, 3, 1]} />
-      <MovingSpot depthBuffer={depthBuffer} color="#b00c3f" position={[1, 3, 0]} />
-      <MovingSpot depthBuffer={depthBuffer} color="#9C27B0" position={[-2, 3, 0]} />
+      <MovingSpot depthBuffer={depthBuffer} color="#0F3460" position={[3, 3, 1]} />
+      <MovingSpot depthBuffer={depthBuffer} color="#581b25" position={[1, 3, 0]} />
+      <MovingSpot depthBuffer={depthBuffer} color="#0F3460" position={[-2, 3, 0]} />
       <mesh position={[0, -1.03, 0]} castShadow receiveShadow geometry={nodes.dragon.geometry} material={materials['Default OBJ.001']} dispose={null} />
       <mesh receiveShadow position={[0, -1, 0]} rotation-x={-Math.PI / 2}>
         <planeGeometry args={[50, 50]} />
@@ -43,5 +43,5 @@ function MovingSpot({ vec = new Vector3(), ...props }) {
     light.current.target.position.lerp(vec.set((state.mouse.x * viewport.width) / 2, (state.mouse.y * viewport.height) / 2, 0), 0.1)
     light.current.target.updateMatrixWorld()
   })
-  return <SpotLight castShadow ref={light} penumbra={1} distance={6} angle={0.35} attenuation={5} anglePower={4} intensity={2} {...props} />
+  return <SpotLight castShadow ref={light} penumbra={1} distance={6} angle={0.35} attenuation={7} anglePower={4} intensity={5} {...props} />
 }

@@ -29,7 +29,8 @@ const Porftolio = () => {
 
       photo: DappsFactory,
       back: "Landing page developed with React.",
-      stack: "react",
+      stack: "react Express NodeJs MongoDB",
+      goal: 'Developed full interaction with the blockchain to create new criptocurrencies in a easy way in any chain supported.',
       linkGit: "https://dappsfactory.io",
       linkWeb: 'https://dappsfactory.io'
     },
@@ -38,7 +39,8 @@ const Porftolio = () => {
       variant: "click",
       photo: MinterFactory,
       back: "Create your own criptocurrency. Creation of Tokens ERC-20. Developed with React and EtherJs",
-      stack: "web3",
+      goal: 'Developed full interaction with the blockchain to create new criptocurrencies in a easy way in any chain supported.',
+      stack: "React Solidity MongoDB IPFS",
       linkWeb: "https://minterfactory.io"
     },
     {
@@ -46,7 +48,8 @@ const Porftolio = () => {
       variant: "click",
       photo: PerceptionFace,
       back: "Administration panel developed with React and EtherJs. Smart Contracts made in Solidity.",
-      stack: "web3",
+      goal: 'Lauched Administration panel connected who interacts with the blockchain to create and control more than 5000 NFTs.',
+      stack: "React Solidity MongoDB EtherJs Polygon",
       linkWeb: "https://perceptionFace.com"
     },
     
@@ -62,12 +65,14 @@ const Porftolio = () => {
 
   return (
     <>
-      <Zoom>
+      
       <div style={{paddingTop: '4rem', paddingBottom: '4rem', backgroundColor: '#1A1A2E',}}>
+        <Zoom delay={400}>
         <Container>
           <Grid sx={{marginBottom: '2rem'}}>
             <label className="portfolio-box">Portfolio</label>
           </Grid>
+          <Zoom delay={800}>
           <Grid container className="portfolio-grid">
             <div>
               <label className="portfolio-title">Recent Works</label>
@@ -115,14 +120,16 @@ const Porftolio = () => {
               </button>
             </div>
           </Grid>
-
+          </Zoom>
 
           <Grid style={{ display: "flex", flexDirection: "row" }} container>
+          <Zoom delay={900}>
             {cards.map((card, index) => (
               <Fade
                 in={checked}
                 style={{ transitionDuration: checked ? "2000ms" : "0ms" }}
               >
+                
                 <div key={index} className="div-boxes">
                   {selected === "all" ? (
                     <DefaultBox key={card.id} card={card} />
@@ -134,12 +141,15 @@ const Porftolio = () => {
                     <DefaultBox key={card.id} card={card} />
                   ) : null}
                 </div>
+                
               </Fade>
             ))}
+           </Zoom>
           </Grid>
         </Container>
+        </Zoom>
       </div>
-      </Zoom>
+      
     </>
   );
 };

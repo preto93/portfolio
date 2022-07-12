@@ -23,11 +23,12 @@ const About = () => {
           paddingBottom: "5rem",
         }}
       >
-        <Fade bottom>
+        <Fade bottom delay={100}>
           <Container sx={{ paddingTop: "2rem" }}>
             <Grid container item xs={12}>
-              
+            
               <Grid item md={3}>
+              
                 <label
                   style={{
                     backgroundColor: "#0F3460",
@@ -38,9 +39,11 @@ const About = () => {
                   {" "}
                   About Me
                 </label>
+                <Fade bottom delay={900}>
                 <h1 style={{ color: "white" }}>
                   Creative developer based in Buenos Aires
                 </h1>
+                <Fade bottom delay={1200}>
                 <p style={{ color: "#f2f2f2" }}>
                   I'm Creative Independent Web Developer, and I'm very
                   passionate and dedicated to my work. With 20 years experience
@@ -49,30 +52,11 @@ const About = () => {
                   enjoy every step of the design process, from discussion and
                   collaboration.
                 </p>
+                </Fade>
+                </Fade>
               </Grid>
+              
 
-              {/* <h2>Sebastian Medina</h2>
-            <h3>Software developer</h3>
-            <p>
-              Ultricies nisi voluptatem, illo inventore veritatis et quasi
-              architecto beatae vitae dicta sunt explicabo nemo enim ipsam
-              voluptatem. Sed ut perspiciatis unde omnis iste natus error sit
-              voluptatem accusantium doloremque latu dantium, totam rem aperiam,
-              eaque ipsa quae ab illo tempor dignissim at.
-            </p>
-            <h2>SIGNATURE</h2>
-            <Divider />
-            <h4>Date of Birth:</h4>
-            <p>01/01/1990</p>
-            <h4>Email:</h4>
-            <p>snmedina91@gmail.com</p>
-            <h4>Phone:</h4>
-            <p>+34 654 567 890</p>
-            <h4>Address:</h4>
-            <p>Calle de la casa de paz, 1, 28001 Madrid</p>
-            <h4>Languages:</h4>
-            <p>English, Spanish, French</p>
- */}
 
               <Grid item md={9}>
                 <h2
@@ -88,6 +72,7 @@ const About = () => {
                 <Container sx={{ width: "60%" }}>
                   <Grid container item md={12} className="interests">
                     <Grid item xs={6} sm={6} md={3} className="grid-interests">
+                    <Zoom delay={800}>
                       <Box
                         sx={{
                           width: 100,
@@ -107,8 +92,10 @@ const About = () => {
                           </p>
                         </div>
                       </Box>
+                      </Zoom>
                     </Grid>
                     <Grid item xs={6} sm={6} md={3} className="grid-interests">
+                    <Zoom delay={900}>
                       <Box
                         sx={{
                           width: 100,
@@ -128,8 +115,10 @@ const About = () => {
                           </p>
                         </div>
                       </Box>
+                      </Zoom>
                     </Grid>
                     <Grid item xs={6} sm={6} md={3} className="grid-interests">
+                    <Zoom delay={1000}>
                       <Box
                         sx={{
                           width: 100,
@@ -149,8 +138,10 @@ const About = () => {
                           </p>
                         </div>
                       </Box>
+                      </Zoom>
                     </Grid>
                     <Grid item xs={6} sm={6} md={3} className="grid-interests">
+                    <Zoom delay={1100}>
                       <Box
                         sx={{
                           width: 100,
@@ -170,8 +161,10 @@ const About = () => {
                           </p>
                         </div>
                       </Box>
+                      </Zoom>
                     </Grid>
                     <Grid item xs={6} sm={6} md={3} className="grid-interests">
+                    <Zoom delay={1200}>
                       <Box
                         sx={{
                           width: 100,
@@ -191,8 +184,10 @@ const About = () => {
                           </p>
                         </div>
                       </Box>
+                      </Zoom>
                     </Grid>
                     <Grid item xs={6} sm={6} md={3} className="grid-interests">
+                    <Zoom delay={1300}>
                       <Box
                         sx={{
                           width: 100,
@@ -212,8 +207,10 @@ const About = () => {
                           </p>
                         </div>
                       </Box>
+                      </Zoom>
                     </Grid>
                     <Grid item xs={6} sm={6} md={3} className="grid-interests">
+                    <Zoom delay={1400}>
                       <Box
                         sx={{
                           width: 100,
@@ -233,8 +230,10 @@ const About = () => {
                           </p>
                         </div>
                       </Box>
+                      </Zoom>
                     </Grid>
                     <Grid item xs={6} sm={6} md={3} className="grid-interests">
+                    <Zoom delay={1500}>
                       <Box
                         sx={{
                           width: 100,
@@ -254,6 +253,7 @@ const About = () => {
                           </p>
                         </div>
                       </Box>
+                      </Zoom>
                     </Grid>
                     
                   </Grid>
