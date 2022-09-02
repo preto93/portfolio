@@ -5,6 +5,12 @@ import "./Skills.css";
 import icono from "../../assets/iconoProvisorio.png";
 import SnowboardingIcon from "@mui/icons-material/Snowboarding";
 import Slide from "react-reveal/Slide";
+import JsLogo from '../../assets/javascript.png';
+import Html5Logo from '../../assets/html5.png';
+import Css3 from '../../assets/css3.png';
+import NodeJs from '../../assets/nodejs.png';
+import ReactLogo from '../../assets/react2.png';
+import SolidityLogo from '../../assets/solidity.png';
 
 const PrettoSlider = styled(Slider)({
   color: "#E94560",
@@ -63,6 +69,7 @@ const PrettoSlider = styled(Slider)({
 const Skills = () => {
   return (
     <div
+    id="skills"
       style={{
         backgroundColor: "#1A1A2E",
         paddingTop: "4rem",
@@ -89,26 +96,26 @@ const Skills = () => {
               <Slide bottom delay={500}>
                 <h1 className="subtitle-skills">TECHNICAL SKILLS</h1>
               </Slide>
+              
+              <Grid item md={12}>
+              <img src={JsLogo} alt='' width="100px" />
+              <img src={ReactLogo} alt='' width="100px" />
+              <img src={NodeJs} alt='' width="100px" />
+              </Grid>
+              <Grid item md={12}>
+              <img src={Html5Logo} alt='' width="100px" />
+              <img src={Css3} alt='' width="100px" />
+              
+              
+              <img src={SolidityLogo} alt='' width="100px" />
+              </Grid>
+              
+              
             </Grid>
             <Grid item md={6}>
               <Slide bottom delay={500}>
                 <h1 className="subtitle-skills">PROFESSIONAL SKILLS</h1>
               </Slide>
-            </Grid>
-
-            <Grid item md={6}>
-              <label className="label-skills">Javascript</label>
-              <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
-                <PrettoSlider
-                  valueLabelDisplay="auto"
-                  aria-label="pretto slider"
-                  defaultValue={95}
-                  disabled
-                />
-                &nbsp;&nbsp;&nbsp;<label className="label-expertise">95%</label>
-              </Box>
-            </Grid>
-            <Grid item md={6}>
               <label className="label-skills">Comunication</label>
               <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
                 <PrettoSlider
@@ -120,20 +127,6 @@ const Skills = () => {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <label className="label-expertise">100%</label>
               </Box>
-            </Grid>
-            <Grid item md={6}>
-              <label className="label-skills">React</label>
-              <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
-                <PrettoSlider
-                  valueLabelDisplay="auto"
-                  aria-label="pretto slider"
-                  defaultValue={80}
-                  disabled
-                />
-                &nbsp;&nbsp;&nbsp;<label className="label-expertise">80%</label>
-              </Box>
-            </Grid>
-            <Grid item md={6}>
               <label className="label-skills">Teamwork</label>
               <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
                 <PrettoSlider
@@ -144,20 +137,6 @@ const Skills = () => {
                 />
                 &nbsp;&nbsp;&nbsp;<label className="label-expertise">75%</label>
               </Box>
-            </Grid>
-            <Grid item md={6}>
-              <label className="label-skills">HTML & CSS</label>
-              <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
-                <PrettoSlider
-                  valueLabelDisplay="auto"
-                  aria-label="pretto slider"
-                  defaultValue={85}
-                  disabled
-                />
-                &nbsp;&nbsp;&nbsp;<label className="label-expertise">85%</label>
-              </Box>
-            </Grid>
-            <Grid item md={6}>
               <label className="label-skills">Creativity</label>
               <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
                 <PrettoSlider
@@ -168,20 +147,6 @@ const Skills = () => {
                 />
                 &nbsp;&nbsp;&nbsp;<label className="label-expertise">75%</label>
               </Box>
-            </Grid>
-            <Grid item md={6}>
-              <label className="label-skills">Node Js</label>
-              <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
-                <PrettoSlider
-                  valueLabelDisplay="auto"
-                  aria-label="pretto slider"
-                  defaultValue={65}
-                  disabled
-                />
-                &nbsp;&nbsp;&nbsp;<label className="label-expertise">65%</label>
-              </Box>
-            </Grid>
-            <Grid item md={6}>
               <label className="label-skills">Dedication</label>
               <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
                 <PrettoSlider
@@ -193,20 +158,6 @@ const Skills = () => {
                 &nbsp;&nbsp;&nbsp;
                 <label className="label-expertise">100%</label>
               </Box>
-            </Grid>
-            <Grid item md={6}>
-              <label className="label-skills">Solidity</label>
-              <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
-                <PrettoSlider
-                  valueLabelDisplay="auto"
-                  aria-label="pretto slider"
-                  defaultValue={60}
-                  disabled
-                />
-                &nbsp;&nbsp;&nbsp;<label className="label-expertise">60%</label>
-              </Box>
-            </Grid>
-            <Grid item md={6}>
               <label className="label-skills">Project Management</label>
               <Box sx={{ width: "90%", display: "flex", flexDirection: "row" }}>
                 <PrettoSlider
@@ -218,6 +169,11 @@ const Skills = () => {
                 &nbsp;&nbsp;&nbsp;<label className="label-expertise">85%</label>
               </Box>
             </Grid>
+
+            
+         
+          
+            
           </Grid>
         </Slide>
       </Container>

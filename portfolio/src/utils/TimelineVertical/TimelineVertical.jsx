@@ -6,37 +6,48 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import '../../'
 
 const TimelineVertical = () => {
   return (
     <>
-      <Timeline position="alternate" sx={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+      <Timeline position="alternate">
         <TimelineItem>
           <TimelineOppositeContent color="white">
             11/2021 - NOW
           </TimelineOppositeContent>
-          <TimelineSeparator sx={{height: '20vh'}}>
-            <TimelineDot variant="outlined" color="secondary"/>
+          <TimelineSeparator >
+            <TimelineDot variant="outlined" color="info"/>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent color="white">
             DappsFactory <br/> Software Factory 
             <p>
-              Full Stack developer
-            </p>
-            <p>
-              React JS <br /> Solidity 
+            - Layout design and programming of views.
+            - Develop platform views according to product area guidelines.
+            - Collaborate with back-end developers and web designers to improve usability.
+            - Coding of user interaction functionalities.
+            - Bug-fixing and documentation.
+            - Code review of colleagues in the same position.
+            - Create quality models and prototypes.
             </p>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent color="white">
-            <p>Freelancer</p>
-            <p>MERN Stack</p>
-            <p>Mongo Express React Node</p>
+            DappsFactory <br/> Software Factory 
+            <p>
+            - Layout design and programming of views.
+            - Develop platform views according to product area guidelines.
+            - Collaborate with back-end developers and web designers to improve usability.
+            - Coding of user interaction functionalities.
+            - Bug-fixing and documentation.
+            - Code review of colleagues in the same position.
+            - Create quality models and prototypes.
+            </p>
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot variant="outlined" color="secondary"/>
+            <TimelineDot variant="outlined" color="info"/>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent color="white">06/2018 - 11/2021</TimelineContent>
@@ -44,7 +55,7 @@ const TimelineVertical = () => {
         <TimelineItem>
          
           <TimelineSeparator sx={{height: '1px'}}>
-            <TimelineDot variant="outlined" color="secondary"/>
+            <TimelineDot variant="outlined" color="info"/>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent color="white"></TimelineContent>

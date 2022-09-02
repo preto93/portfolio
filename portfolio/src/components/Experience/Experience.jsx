@@ -11,27 +11,22 @@ const Experience = () => {
   return (
     <>
     
-    <div className="container-experience">
+    <div className="container-experience" id="experience">    
       <Lights />
       
-      <Box className="center-experience" color="white">
-        <Container>
+      <Box className="center-experience" color="white" sx={{maxWidth: '100%', maxHeight: '100%'}}>
+        <Container >
           <Grid container item >
-            <Grid item xs={12} md={6} sx={{height: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <Grid item xs={12} md={5} sx={{height: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               <Grid item md={12} sx={{padding: '3rem'}}>
               <Fade duration={3000}>
-                <div className="div-left">
-                  
-                    <label className="experience-title animated">Work Experience</label>
-
-                  
-              </div> 
+                
+                  <label className="experience-title animated">Work Experience</label>
+              
               </Fade> 
               </Grid>
-            
-            
             </Grid>
-            <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <Grid item xs={12} md={7} className='timeline-container'>
             <Fade duration={3000}>
               <TimelineVertical />
               </Fade>
@@ -39,6 +34,7 @@ const Experience = () => {
           </Grid>
           </Container>
         </Box>
+      
     </div>
    
     </>

@@ -29,7 +29,7 @@ const Porftolio = () => {
 
       photo: DappsFactory,
       back: "Landing page developed with React.",
-      stack: "react Express NodeJs MongoDB",
+      stack: "react",
       goal: 'Developed full interaction with the blockchain to create new criptocurrencies in a easy way in any chain supported.',
       linkGit: "https://dappsfactory.io",
       linkWeb: 'https://dappsfactory.io'
@@ -40,7 +40,7 @@ const Porftolio = () => {
       photo: MinterFactory,
       back: "Create your own criptocurrency. Creation of Tokens ERC-20. Developed with React and EtherJs",
       goal: 'Developed full interaction with the blockchain to create new criptocurrencies in a easy way in any chain supported.',
-      stack: "React Solidity MongoDB IPFS",
+      stack: "react",
       linkWeb: "https://minterfactory.io"
     },
     {
@@ -49,7 +49,7 @@ const Porftolio = () => {
       photo: PerceptionFace,
       back: "Administration panel developed with React and EtherJs. Smart Contracts made in Solidity.",
       goal: 'Lauched Administration panel connected who interacts with the blockchain to create and control more than 5000 NFTs.',
-      stack: "React Solidity MongoDB EtherJs Polygon",
+      stack: "web3",
       linkWeb: "https://perceptionFace.com"
     },
     
@@ -66,7 +66,7 @@ const Porftolio = () => {
   return (
     <>
       
-      <div style={{paddingTop: '4rem', paddingBottom: '4rem', backgroundColor: '#1A1A2E',}}>
+      <div style={{paddingTop: '4rem', paddingBottom: '4rem', backgroundColor: '#1A1A2E',}} id="portfolio">
         <Zoom delay={400}>
         <Container>
           <Grid sx={{marginBottom: '2rem'}}>

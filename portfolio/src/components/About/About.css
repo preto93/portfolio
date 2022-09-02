@@ -1,3 +1,9 @@
+.interests{
+    display: flex;
+    flex-direction: row;
+}
+
+
 .interest-container{
     height:100%;
     display: flex;
@@ -8,9 +14,11 @@
     
 }
 
+
+
 .grid-interests{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     padding-bottom: 2rem;
 
 }

@@ -6,6 +6,8 @@ import cn from "classnames";
 import { FaReact } from "react-icons/fa";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
+import Tooltip from '@mui/material/Tooltip';
+
 
 const DefaultBox = ({ card }) => {
   const [showBack, setShowBack] = useState(false);
@@ -47,13 +49,17 @@ const DefaultBox = ({ card }) => {
               <div className='card-icons'>
                 {card.linkGit && (
                   <Button onClick={() => openInNewTab(card.linkGit)}>
+                    <Tooltip title="Github">
+
                     <GitHubIcon color="info" />
+                    </Tooltip>
                   </Button>
                 )}
                 {card.linkWeb && (
                   <Button onClick={() => openInNewTab(card.linkWeb)}>
-                  
+                  <Tooltip title="Web">
                     <LanguageIcon color="info" />
+                    </Tooltip>
                   </Button>
                 )}
               </div>

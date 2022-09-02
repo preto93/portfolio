@@ -8,7 +8,7 @@ const customTheme = createTheme({
             
         },
         secondary: {
-            main: '#16213E',
+            main: '#DDE0FE',
           
         },
         third: {

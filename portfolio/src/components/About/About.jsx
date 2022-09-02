@@ -17,28 +17,35 @@ const About = () => {
   return (
     <>
       <div
+      id="about"
         style={{
           backgroundColor: "#16213E",
           paddingTop: "5rem",
           paddingBottom: "5rem",
+          
         }}
       >
         <Fade bottom delay={100}>
-          <Container sx={{ paddingTop: "2rem" }}>
+          <Container sx={{ paddingTop: "2rem" }} spacing={2}>
             <Grid container item xs={12}>
-            
-              <Grid item md={3}>
-              
+              <Grid item md={12}>
+                <Fade bottom delay={600}>
                 <label
                   style={{
                     backgroundColor: "#0F3460",
                     color: "#E94560",
                     padding: "10px 12px",
+                    marginBottom:"3rem"
                   }}
                 >
                   {" "}
                   About Me
                 </label>
+                </Fade>
+              
+              </Grid>
+            
+              <Grid item md={4}>
                 <Fade bottom delay={900}>
                 <h1 style={{ color: "white" }}>
                   Creative developer based in Buenos Aires
@@ -58,7 +65,7 @@ const About = () => {
               
 
 
-              <Grid item md={9}>
+              <Grid item md={8}>
                 <h2
                   style={{
                     color: "#E94560",
@@ -69,7 +76,7 @@ const About = () => {
                   My interests
                 </h2>
                 <Zoom delay={700}>
-                <Container sx={{ width: "60%" }}>
+                <Container sx={{ width: "90%" }}>
                   <Grid container item md={12} className="interests">
                     <Grid item xs={6} sm={6} md={3} className="grid-interests">
                     <Zoom delay={800}>

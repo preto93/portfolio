@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
-
+import {Grid} from '@mui/material'
+import './TypingEffect.css'
 const TypingEffect = () => {
   return (
     <>
       
-
-      <br />
-
+    <Grid item sm={8} md={12}>
       <ReactTypingEffect
         text={["SOFTWARE  DEVELOPER"]}
         cursorRenderer={cursor => <h1 style={{display: 'none'}}>{cursor}</h1>}
@@ -27,6 +26,7 @@ const TypingEffect = () => {
           );
         }}        
       />
+      </Grid>
     </>
   );
 };

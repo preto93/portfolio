@@ -73,11 +73,7 @@ const NavBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" sx={{color: 'red !important'}}>{page}</Typography>
-                </MenuItem>
-              ))}
+             
             </Menu>
           </Box>
           <Typography
@@ -97,16 +93,26 @@ const NavBar = () => {
           >
           </Typography>
           <Box className ="navCont" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button 
-                key={page}
-                color="info"
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: 'block' }}
-              >
-                {page}
+
+              <a href="#about" className="links-nav" >
+                About
+              </a>
+              <a href="#portfolio" className="links-nav" >
+                Portfolio
+              </a>
+              <a href="#experience" className="links-nav" >
+                Experience
+              </a>
+              <a href="#skills" className="links-nav" >
+                Skills
+              </a>
+              <a href="#contact" className="links-nav" >
+                Contact
+              </a>
+              <Button color='info'>
+                Download CV
               </Button>
-            ))}
+
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
