@@ -1,0 +1,23 @@
+.title-skills{
+    color: white;
+}
+
+.subtitle-skills{
+    color: #E94560;
+}
+
+.label-skills{
+    color: white;
+    font-weight: bold;
+}
+
+.grid-skills{
+    display: flex;
+    flex-direction: row;
+}
+
+.label-expertise{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}

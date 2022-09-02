@@ -1,19 +1,26 @@
-.backgroundHome{
-    background: url(../../assets/background.png) no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-}
 
-.title{
-    text-align: center;
-    font-size: 50px;
-    color: white;
-    margin-top: 50px;
-    font-family: 'Montserrat', sans-serif;
+.stroked {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #E94560;
     font-weight: bold;
+    font-size: 72px;
+  }
+
+.button-home{
+    border: 1px solid #E94560 !important;
+    color: white !important;
+    padding: 16px 20px !important;
+
+}
+.button-home:hover{
+    border: 1px solid #E94560 !important;
+    color: #E94560 !important;
 }
 
-.divider{
-    display: flex;
-    justify-content: center;
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }

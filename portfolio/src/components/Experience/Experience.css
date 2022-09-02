@@ -1,0 +1,66 @@
+.experience-title{
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: left;
+    color: transparent !important;
+    -webkit-text-stroke: 1px #E94560;
+    width: 0;
+    min-width: 100%;
+    text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+}
+.experience-subtitle{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    color :white;
+}
+
+.container-experience{
+    position: relative;
+    margin-top: -1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.center-experience {
+    position: absolute;
+    pointer-events: none;
+    bottom: 15%;
+    right: 0%;
+    left: 0%;
+    
+  }
+  @keyframes example {
+    0%   {text-shadow: 5px 5px 1px #1A1A2E;}
+    25%  {text-shadow: 5px 5px 1px  #16213E;}
+    50%  {text-shadow: 5px 5px 1px  #0F3460;}
+    75%  {text-shadow: 5px 5px 1px  #16213E;}
+    100% {text-shadow: 5px 5px 1px  #1A1A2E;}
+  }
+
+.animated{
+    
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   
+}
+
+.timeline-container{
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .animated {
+      font-size: 4rem;
+      
+    }
+
+    .timeline-grid{
+    }
+  }
